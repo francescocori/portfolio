@@ -149,3 +149,11 @@
     transform: scale(1) rotate(90deg);
   }
 }
+
+.hero {
+  background: linear-gradient(
+    180deg,
+    rgba(12, 10, 62, 1) 57%,
+    rgb(242, 244, 243) 100%
+  );
+}
