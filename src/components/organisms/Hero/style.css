@@ -1,0 +1,151 @@
+.triangles {
+  width: 20%;
+  display: flex;
+  position: relative;
+  top: -100px;
+}
+
+.un {
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-bottom: 4rem solid #d3c0cd;
+
+  animation: enlarge 10s infinite;
+}
+
+.deux {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+
+  top: -3rem;
+
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+  border-bottom: 5rem solid #41ead4;
+
+  animation: enlargeTwo 10s infinite;
+  animation-delay: 1s;
+}
+
+.trois {
+  position: absolute;
+  left: 2.8rem;
+  top: 10rem;
+  width: 2rem;
+  height: 2rem;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  border-bottom: 3rem solid #afa2ff;
+  animation: enlargeThree 15s infinite;
+}
+
+.quatre {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: -7rem;
+  top: 10rem;
+
+  border-left: 4rem solid transparent;
+  border-right: 4rem solid transparent;
+  border-bottom: 7rem solid #697b8d;
+
+  animation: reduceFour 20s infinite;
+  animation-delay: 0.5s;
+}
+
+.cinq {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 5rem;
+  left: -3rem;
+
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 2rem solid #d3c0cd;
+
+  animation: enlargeFive 8s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  25% {
+    transform: scale(1.25) rotate(120deg);
+  }
+  50% {
+    transform: scale(0.5) rotate(240deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes enlargeTwo {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.6) rotate(-60deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(-100deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes enlargeThree {
+  0% {
+    transform: scale(1) rotate(150deg);
+  }
+  25% {
+    transform: scale(1.25) rotate(190deg);
+  }
+  50% {
+    transform: scale(0.5) rotate(240deg);
+  }
+  100% {
+    transform: scale(1) rotate(150deg);
+  }
+}
+
+@keyframes reduceFour {
+  0% {
+    transform: scale(1) rotate(-150deg);
+  }
+  25% {
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    transform: scale(0.4) rotate(150deg);
+  }
+  100% {
+    transform: scale(1) rotate(-150deg);
+  }
+}
+
+@keyframes enlargeFive {
+  0% {
+    transform: scale(1) rotate(90deg);
+  }
+  25% {
+    transform: scale(1.2) rotate(120deg);
+  }
+  50% {
+    transform: scale(1.7) rotate(150deg);
+  }
+  100% {
+    transform: scale(1) rotate(90deg);
+  }
+}
