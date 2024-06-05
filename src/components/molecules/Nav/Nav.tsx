@@ -20,7 +20,7 @@ export const Nav = () => {
   ];
 
   return (
-    <div className="mx-auto flex h-24 max-w-[1240px] items-center justify-between bg-[#0c0a3d] px-4 text-white">
+    <div className="mx-auto flex h-12 w-full items-center justify-between bg-[#0c0a3d] px-4 text-white">
       {/* Logo */}
       <h1 className="w-full text-3xl font-bold text-[#00df9a]"></h1>
 
@@ -29,7 +29,7 @@ export const Nav = () => {
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="hover:text-black m-2 cursor-pointer rounded-xl p-4 duration-300 hover:bg-[#00df9a]"
+            className="m-2 cursor-pointer rounded-xl p-4 underline-offset-4 duration-300 hover:underline"
           >
             {item.text}
           </li>
@@ -45,12 +45,12 @@ export const Nav = () => {
       <ul
         className={
           nav
-            ? "border-r-gray-900 fixed left-0 top-0 h-full w-[60%] border-r bg-[#000300] duration-500 ease-in-out md:hidden"
+            ? "border-r-gray-900 fixed left-0 top-0 z-10 h-full w-[60%] border-r bg-[#302bbcf9] duration-500 ease-in-out md:hidden"
             : "fixed bottom-0 left-[-100%] top-0 w-[60%] duration-500 ease-in-out"
         }
       >
         {/* Mobile Logo */}
-        <h1 className="m-4 w-full text-3xl font-bold text-[#00df9a]">REACT.</h1>
+        <h1 className="m-4 w-full text-3xl font-bold text-[#00df9a]">MENU</h1>
 
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (

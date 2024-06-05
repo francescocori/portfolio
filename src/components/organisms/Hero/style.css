@@ -6,7 +6,7 @@
   left: 50%;
 }
 
-.un {
+.one {
   position: absolute;
   top: 5rem;
   left: 7rem;
@@ -18,7 +18,7 @@
   animation: enlarge 10s infinite;
 }
 
-.deux {
+.two {
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -33,7 +33,7 @@
   animation-delay: 1s;
 }
 
-.trois {
+.three {
   position: absolute;
   left: 2.8rem;
   top: 10rem;
@@ -45,7 +45,7 @@
   animation: enlargeThree 15s infinite;
 }
 
-.quatre {
+.four {
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -60,7 +60,7 @@
   animation-delay: 0.5s;
 }
 
-.cinq {
+.five {
   position: absolute;
   width: 2rem;
   height: 2rem;

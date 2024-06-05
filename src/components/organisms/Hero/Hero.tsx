@@ -1,15 +1,15 @@
 import * as React from "react";
-//maybe delete this
+//maybe delete this if not using muii/material!!!!!!!!+++
 import useMediaQuery from "@mui/material/useMediaQuery";
 import "./style.css";
 
 export const Hero = () => {
   return (
-    <div className="hero flex h-screen w-full items-center px-20 xxl:px-40">
+    <div className="hero flex h-screen w-full items-center px-20 xl:px-40">
       <div className="sm:w-[100%] xl:w-[57%]">
         <h1 className="text-[52px] font-bold text-white xxl:text-[60px]">
           Hello! <br /> I'm{" "}
-          <div className="nom text-transparent from-indigo-500 via-sky-500 to-emerald-500 relative inline-block bg-gradient-to-r from-10% via-30% to-90% bg-clip-text pt-0 underline">
+          <div className="text-transparent from-indigo-500 via-sky-500 to-emerald-500 relative inline-block bg-gradient-to-r from-10% via-30% to-90% bg-clip-text pt-0 underline">
             <span>Francesco</span>
             <span> Coriolano.</span>
 
@@ -25,11 +25,11 @@ export const Hero = () => {
       </div>
       <div className="hidden h-full w-[43%] items-center justify-center sm:block">
         <div className="triangles">
-          <div className="un"></div>
-          <div className="deux"></div>
-          <div className="trois"></div>
-          <div className="quatre"></div>
-          <div className="cinq"></div>
+          <div className="one"></div>
+          <div className="two"></div>
+          <div className="three"></div>
+          <div className="four"></div>
+          <div className="five"></div>
         </div>
       </div>
     </div>

@@ -7,9 +7,9 @@ export default function Home() {
       <div className="w-full">
         <Nav />
         <Hero />
-        {/* <AboutMe />
-        <Skills />
-        <Projects /> */}
+        <AboutMe />
+        {/* <Skills /> */}
+        {/* <Projects /> */}
       </div>
     </main>
   );
