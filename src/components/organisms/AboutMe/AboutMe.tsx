@@ -25,7 +25,8 @@ export const AboutMe = () => {
         technologies and skills, and I believe that being a continuous learner
         is essential for every developer.
       </p>
-      <div className="mt-10 h-screen w-full flex-col px-20">
+      <div className="relative mt-10 h-screen w-full flex-col px-20">
+        <div className="absolute left-[50%] h-[50rem] w-[5px] bg-[#0c0a3d]"></div>
         <div
           className="w-[500px] rounded-2xl bg-[#0c0a3d] p-[30px]"
           data-aos="fade-right"
