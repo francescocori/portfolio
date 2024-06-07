@@ -15,7 +15,8 @@ export const ExperienceCard = ({
   return (
     <div
       className={`w-[350px] rounded-2xl bg-[#0c0a3d] p-[30px] md:w-full xl:w-[500px] ${even && "xl:ml-auto"}`}
-      data-aos={`fade-up-${even ? "right" : "left"}`}
+      // data-aos={`fade-up-${even ? "right" : "left"}`}
+      data-aos="fade-up"
     >
       <p className="text-bold text-[18px] text-white md:text-[22px]">{time}</p>
       <div>

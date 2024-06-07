@@ -5,7 +5,7 @@ import "./style.css";
 
 export const Hero = () => {
   return (
-    <div className="hero flex h-screen w-full items-center px-20 xl:px-40">
+    <div className="hero flex h-screen w-full items-center justify-center px-20 xl:px-40">
       <div className="sm:w-[100%] xl:w-[57%]">
         <h1 className="text-[52px] font-bold text-white xxl:text-[60px]">
           Hello! <br /> I'm{" "}
