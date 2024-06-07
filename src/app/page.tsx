@@ -3,7 +3,7 @@ import { AboutMe, Hero, Projects, Skills } from "@/components/organisms";
 import { Nav } from "@/components/molecules";
 export default function Home() {
   return (
-    <main className="flex">
+    <main className="flex w-full">
       <div className="w-full">
         <Nav />
         <Hero />

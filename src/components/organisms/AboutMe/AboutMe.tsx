@@ -55,8 +55,8 @@ export const AboutMe = () => {
         technologies and skills, and I believe that being a continuous learner
         is essential for every developer.
       </p>
-      <div className="relative mt-10 h-screen w-full flex-col px-20">
-        <div className="absolute left-[50%] h-[50rem] w-[5px] bg-[#0c0a3d]"></div>
+      <div className="relative mt-10 flex h-screen w-full flex-col items-center gap-4 md:items-start md:px-20 xl:gap-0">
+        <div className="absolute left-[50%] hidden h-[50rem] w-[5px] bg-[#0c0a3d] xl:block" />
         {experienceData.map((experience, index) => (
           <ExperienceCard
             time={experience.time}
