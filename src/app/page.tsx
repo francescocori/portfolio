@@ -4,11 +4,11 @@ import { Nav } from "@/components/molecules";
 export default function Home() {
   return (
     <main className="flex w-full">
-      <div className="w-full">
+      <div className="w-full gap-4">
         <Nav />
         <Hero />
         <AboutMe />
-        {/* <Skills /> */}
+        <Skills />
         {/* <Projects /> */}
       </div>
     </main>
