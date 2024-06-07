@@ -42,7 +42,7 @@ export const AboutMe = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="l flex w-full flex-col items-center md:px-10 lg:px-20 xl:px-40">
+    <div className="l flex w-full flex-col items-center px-10 lg:px-20 xl:px-40">
       <h2 className="mt-[200px] text-[40px] font-bold text-[#0c0a3d]">
         About me
       </h2>
