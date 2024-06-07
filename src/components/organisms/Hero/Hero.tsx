@@ -7,13 +7,13 @@ export const Hero = () => {
   return (
     <div className="hero flex h-screen w-full items-center justify-center px-20 xl:px-40">
       <div className="sm:w-[100%] xl:w-[57%]">
-        <h1 className="text-[52px] font-bold text-white xxl:text-[60px]">
+        <h1 className="xxl:text-[60px] text-[52px] font-bold text-white">
           Hello! <br /> I'm{" "}
-          <div className="text-transparent from-indigo-500 via-sky-500 to-emerald-500 relative inline-block bg-gradient-to-r from-10% via-30% to-90% bg-clip-text pt-0 underline">
+          <div className="relative inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text pt-0 text-transparent underline">
             <span>Francesco</span>
             <span> Coriolano.</span>
 
-            <div className="from-indigo-500 via-sky-500 to-emerald-500 h-[4px] max-w-[full] bg-gradient-to-r from-10% via-30% to-90%" />
+            <div className="h-[4px] max-w-[full] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" />
           </div>
         </h1>
 

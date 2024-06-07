@@ -42,11 +42,11 @@ export const AboutMe = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="l flex w-full flex-col items-center md:px-10 lg:px-20 xl:px-40">
       <h2 className="mt-[200px] text-[40px] font-bold text-[#0c0a3d]">
         About me
       </h2>
-      <p className="mx-20 pt-10 text-[22px] text-[#0c0a3d]">
+      <p className="pt-10 text-[22px] text-[#0c0a3d]">
         I build websites and web applications using React and other
         technologies, such as Next Js, Typescript, and HTML/CSS/SCSS. I work
         with agile development methodologies and collaborate with other
@@ -55,7 +55,7 @@ export const AboutMe = () => {
         technologies and skills, and I believe that being a continuous learner
         is essential for every developer.
       </p>
-      <div className="relative mt-10 flex h-screen w-full flex-col items-center gap-4 md:items-start md:px-20 xl:gap-0">
+      <div className="relative mt-10 flex w-full flex-col items-center gap-4 md:items-start xl:gap-0">
         <div className="absolute left-[50%] hidden h-[50rem] w-[5px] bg-[#0c0a3d] xl:block" />
         {experienceData.map((experience, index) => (
           <ExperienceCard

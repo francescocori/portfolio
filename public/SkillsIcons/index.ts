@@ -7,3 +7,5 @@ export { default as Tailwind } from "./tailwind.png";
 export { default as Typescript } from "./typescript.png";
 export { default as VisualStudio } from "./visualStudio.png";
 export { default as Figma } from "./figma.png";
+export { default as Html } from "./html.png";
+export { default as ReactIcon } from "./react.png";
