@@ -43,7 +43,7 @@ export const AboutMe = () => {
   }, []);
   return (
     <div
-      className="l flex w-full flex-col items-center px-10 lg:px-20 xl:px-40"
+      className="flex w-full flex-col items-center px-10 lg:px-20 xl:px-40"
       id="about"
     >
       <h2 className="mt-[200px] text-[40px] font-bold text-[#0c0a3d]">

@@ -9,7 +9,7 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <Skills />
-        {/* <Projects /> */}
+        <Projects />
         <Footer />
       </div>
     </main>
