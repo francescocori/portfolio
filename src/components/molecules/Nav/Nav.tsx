@@ -12,11 +12,9 @@ export const Nav = () => {
 
   // Array containing navigation items
   const navItems = [
-    { id: 1, text: "Home" },
-    { id: 2, text: "Company" },
-    { id: 3, text: "Resources" },
-    { id: 4, text: "About" },
-    { id: 5, text: "Contact" },
+    { id: 1, text: "About" },
+    { id: 2, text: "Projects" },
+    { id: 3, text: "Contact" },
   ];
 
   return (
@@ -29,9 +27,9 @@ export const Nav = () => {
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="m-2 cursor-pointer rounded-xl p-4 underline-offset-4 duration-300 hover:underline"
+            className="m-2 cursor-pointer rounded-xl p-4 underline-offset-4 duration-300 hover:text-[#0db881]"
           >
-            {item.text}
+            <a href={`#${item.text.toLowerCase()} `}>{item.text}</a>
           </li>
         ))}
       </ul>
@@ -45,7 +43,7 @@ export const Nav = () => {
       <ul
         className={
           nav
-            ? "border-r-gray-900 fixed left-0 top-0 z-10 h-full w-[60%] border-r bg-[#302bbcf9] duration-500 ease-in-out md:hidden"
+            ? "fixed left-0 top-0 z-10 h-full w-[60%] border-r border-r-gray-900 bg-[#302bbcf9] duration-500 ease-in-out md:hidden"
             : "fixed bottom-0 left-[-100%] top-0 w-[60%] duration-500 ease-in-out"
         }
       >
@@ -56,7 +54,7 @@ export const Nav = () => {
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="hover:text-black border-gray-600 cursor-pointer rounded-xl border-b p-4 duration-300 hover:bg-[#00df9a]"
+            className="cursor-pointer rounded-xl border-b border-gray-600 p-4 duration-300 hover:bg-[#00df9a] hover:text-black"
           >
             {item.text}
           </li>
