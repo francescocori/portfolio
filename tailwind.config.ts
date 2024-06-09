@@ -18,6 +18,9 @@ const config: Config = {
         gradientMid: "rgba(100, 247, 217, 1)",
         gradientEnd: "rgba(175, 162, 255, 1)",
       },
+      boxShadow: {
+        custom: "5px 5px 7px 3px rgba(0,0,0,0.31)",
+      },
     },
   },
   screens: {
