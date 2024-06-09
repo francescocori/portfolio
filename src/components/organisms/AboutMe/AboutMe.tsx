@@ -12,28 +12,26 @@ export const AboutMe = () => {
   }
   const experienceData: ExpepienceCard[] = [
     {
-      time: "May 2022- today",
+      time: "July 2022 - today",
       role: "Frontend Developer - Studio Graphene",
       skills:
-        "SCSS - JS - Vue - GTM - Figma - Cypress - Sitecore - Gulp - Performance - Design - C#",
+        "React - Typescript - Tailwind - JS - HTML - CSS - Figma - Next.Js -  Git  ",
     },
     {
-      time: "May 3022- today",
-      role: "Frontend Developer - Studio Graphene",
-      skills: "SCSS - JS - Vue - GTM - Figma - Cypress - Sitecore",
+      time: "2022",
+      role: "Frontend Developer Internship - KinderBDay",
+      skills: "React -JS - HTML - CSS - Bootstrap - SEO  ",
       even: true,
     },
     {
-      time: "May 2042- today",
-      role: "Frontend Developer - Studio Graphene",
-      skills:
-        "SCSS - JS - Vue - Cypress - Sitecore - Gulp - Performance - Design - C#",
+      time: "2021 ",
+      role: "Full Stack Web Development Bootcamp at Wild Code School",
+      skills: "HTML5 - CSS3 - JavaScript - React - Node.js - MySQL",
     },
     {
-      time: "May 2023- today",
-      role: "Backend Developer - Studio Graphene",
-      skills:
-        "SCSS - JS - Vue - GTM - Figma - Sitecore - Gulp - Performance - Design - C#",
+      time: "2020",
+      role: "The Complete Javascript Course",
+      skills: "JavaScript - CSS - HTML - Bootstrap",
       even: true,
     },
   ];

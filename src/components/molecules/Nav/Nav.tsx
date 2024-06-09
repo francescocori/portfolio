@@ -43,7 +43,7 @@ export const Nav = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 z-10 h-full w-[60%] border-r border-r-gray-900 bg-[#302bbcf9] duration-500 ease-in-out md:hidden"
+            ? "fixed left-0 top-0 z-10 h-full w-[60%] border-r border-r-gray-900 bg-white text-[#0c0a3d] duration-500 ease-in-out md:hidden"
             : "fixed bottom-0 left-[-100%] top-0 w-[60%] duration-500 ease-in-out"
         }
       >
@@ -54,9 +54,9 @@ export const Nav = () => {
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="cursor-pointer rounded-xl border-b border-gray-600 p-4 duration-300 hover:bg-[#00df9a] hover:text-black"
+            className="cursor-pointer rounded-xl border-b border-gray-600 p-4 duration-300 hover:text-black"
           >
-            {item.text}
+            <a href={`#${item.text.toLowerCase()} `}>{item.text}</a>
           </li>
         ))}
       </ul>
