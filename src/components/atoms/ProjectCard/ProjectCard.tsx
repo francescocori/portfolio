@@ -14,7 +14,7 @@ export const ProjectCard = () => {
       </div>
 
       <div className="h-[45%] rounded-b-3xl border-2">
-        <p></p>
+        <p> Site Web -></p>
       </div>
     </div>
   );
