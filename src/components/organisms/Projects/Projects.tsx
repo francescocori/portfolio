@@ -1,10 +1,30 @@
 "use client";
 import { ProjectCard } from "@/components/atoms";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Hkr, DaycareSos, FoodieMania } from "../../../../public/Images";
 export const Projects = () => {
+  const getDeviseType = (width: number) => {
+    if (width < 768) {
+      return "mobile";
+    } else if (width >= 768 && width < 1024) {
+      return "tablet";
+    } else {
+      return "desktop";
+    }
+  };
+  const [width, setWidth] = useState(window.innerWidth);
+  const [devise, setDevise] = useState(getDeviseType(window.innerWidth));
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+      setDevise(getDeviseType(window.innerWidth));
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -13,7 +33,7 @@ export const Projects = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
       partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
     },
     mobile: {
@@ -27,7 +47,7 @@ export const Projects = () => {
       id: 1,
       title: "HKR",
       description:
-        "The HKR website is a platform hosting live auctions for crushed cars, offering a seamless experience for buyers and sellers to engage in real-time bidding on salvaged vehicles.",
+        "The HKR website is a platform hosting live auctions for crushed cars, for buyers and sellers to engage in real-time bidding on salvaged vehicles.",
       liveUrl: "https://beta.hkr.co.uk/",
       image: Hkr,
     },
@@ -55,25 +75,27 @@ export const Projects = () => {
       <h2 className="mb-[100px] mt-[100px] text-[40px] font-bold text-[#0c0a3d]">
         Projects
       </h2>
-      <div className="w-[100%]">
+      <div className="gradient-left w-screen items-center xl:w-[98%]">
         <Carousel
+          centerMode={devise === "tablet" ? true : false}
+          // centerMode={false}
           swipeable={false}
           draggable={false}
           showDots={true}
           responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
+          ssr={true}
           infinite={true}
-          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          // autoPlay={devise !== "mobile" ? true : false}
           autoPlay={false}
-          autoPlaySpeed={1000}
+          autoPlaySpeed={2000}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
           containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          deviceType={"desktop"}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+          // removeArrowOnDeviceType={["tablet", "mobile"]}
+          deviceType={devise}
+          // dotListClass="custom-dot-list-style"
+          // itemClass="carousel-item-padding-40-px"
         >
           {projects.map((project) => (
             <ProjectCard
@@ -81,18 +103,9 @@ export const Projects = () => {
               title={project.title}
               description={project.description}
               liveUrl={project.liveUrl}
+              key={project.title}
             />
           ))}
-          {/* <div className="mr-[2rem] h-[480px] min-w-[250px] overflow-hidden rounded-2xl bg-slate-600 shadow-md">
-            {" "}
-          </div>
-          <div className="mr-[2rem] h-[480px] min-w-[250px] overflow-hidden rounded-2xl">
-            {" "}
-            <ProjectCard image={""} title={""} description={""} liveUrl={""} />
-          </div>
-          <div className="mr-[2rem] h-[480px] min-w-[250px] overflow-hidden rounded-2xl bg-slate-600 shadow-md">
-            {" "}
-          </div> */}
         </Carousel>
       </div>
     </div>
