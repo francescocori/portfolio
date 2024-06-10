@@ -14,9 +14,12 @@ export const Footer = () => {
         Don't hesitate to reach out for any question!
       </p>
 
-      <p className="mt-6 text-white underline underline-offset-4">
+      <a
+        href="mailto:francesco.coriolano@gmail.com"
+        className="mt-6 cursor-pointer text-white underline underline-offset-4 duration-300 hover:text-[#0db881]"
+      >
         francesco.coriolano@gmail.com
-      </p>
+      </a>
       <div className="mt-14 flex gap-4">
         <a href="https://www.linkedin.com/in/francesco-coriolano/">
           <FaLinkedin size={30} color="white" />

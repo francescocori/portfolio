@@ -6,29 +6,22 @@ export const Hero = () => {
   return (
     <div className="hero flex h-screen w-full items-center justify-center px-20 xl:px-40">
       <div className="sm:w-[100%] xl:w-[57%]">
-        <p className="mt-10 w-[100%] text-red-500 sm:text-[18px] md:text-[20px] xl:leading-8">
-          cambia style dell navabar on mobile quando hamburger menu è aperto
-        </p>
         <h1 className="xxl:text-[60px] text-[52px] font-bold text-white">
           Hello! <br /> I'm{" "}
           <div className="relative inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text pt-0 text-transparent underline">
             <span>Francesco</span>
             <span> Coriolano.</span>
-
-            {/* <div className="h-[4px] max-w-[full] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" /> */}
           </div>
         </h1>
         <div className="mt-10 w-[100%] leading-8 text-white sm:text-[18px] md:text-[20px]">
           <TypeAnimation
             sequence={[
-              // Same substring at the start will only be typed out once, initially
               " I'm a Italian Frontend developer based in Lisbon. I'm passionate about  pixel-perfect beautiful interfaces and I love to add a magic touch to the internet. ✨",
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              1000,
             ]}
             wrapper="span"
             speed={50}
             style={{ display: "inline-block" }}
-            // repeat={Infinity}
           />
         </div>
       </div>
