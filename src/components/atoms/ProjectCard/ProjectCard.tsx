@@ -1,5 +1,4 @@
 import React from "react";
-import { Hkr } from "../../../../public/Images";
 interface CardProps {
   image: string;
   title: string;

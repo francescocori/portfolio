@@ -1,9 +1,8 @@
 "use client";
 import { ScrollUpBtn } from "@/components/atoms";
-import React, { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+
 export const Footer = () => {
   return (
     <div
@@ -15,7 +14,9 @@ export const Footer = () => {
         Don't hesitate to reach out for any question!
       </p>
 
-      <p className="mt-6 text-white underline">francesco.coriolano@gmail.com</p>
+      <p className="mt-6 text-white underline underline-offset-4">
+        francesco.coriolano@gmail.com
+      </p>
       <div className="mt-14 flex gap-4">
         <a href="https://www.linkedin.com/in/francesco-coriolano/">
           <FaLinkedin size={30} color="white" />

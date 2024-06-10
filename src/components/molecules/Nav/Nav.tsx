@@ -43,7 +43,7 @@ export const Nav = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 z-10 h-full w-[60%] border-r border-r-gray-900 bg-white text-[#0c0a3d] duration-500 ease-in-out md:hidden"
+            ? "fixed left-0 top-0 !z-[999] h-full w-[60%] border-r border-r-gray-900 bg-white text-[#0c0a3d] duration-500 ease-in-out md:hidden"
             : "fixed bottom-0 left-[-100%] top-0 w-[60%] duration-500 ease-in-out"
         }
       >
