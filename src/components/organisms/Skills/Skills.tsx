@@ -24,13 +24,12 @@ const skills = [
   { name: "Sass", icon: Sass },
   { name: "Html", icon: Html },
   { name: "CSS", icon: Css },
-  // { name: "Node.js", icon: Nodejs },
   { name: "Visual Studio", icon: VisualStudio },
 ];
 
 export const Skills = () => {
   return (
-    <div className="mt-[100px] flex w-full flex-col items-center bg-[#0c0a3d] py-[100px] md:rounded-tl-[200px] md:px-20">
+    <div className="bg-darkBlue mt-[100px] flex w-full flex-col items-center py-[100px] md:rounded-tl-[200px] md:px-20">
       <h2 className="mb-10 text-[40px] font-bold text-white" data-aos="fade-up">
         Skills
       </h2>

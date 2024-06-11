@@ -10,7 +10,6 @@
   position: absolute;
   top: 5rem;
   left: 7rem;
-
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
   border-bottom: 4rem solid #0badc3;
@@ -22,13 +21,10 @@
   position: absolute;
   width: 2rem;
   height: 2rem;
-
   top: -3rem;
-
   border-left: 3rem solid transparent;
   border-right: 3rem solid transparent;
   border-bottom: 5rem solid #41ead4;
-
   animation: enlargeTwo 10s infinite;
   animation-delay: 1s;
 }
@@ -154,7 +150,7 @@
 .hero {
   background: linear-gradient(
     180deg,
-    rgba(12, 10, 62, 1) 57%,
+    rgb(12, 10, 62, 1) 57%,
     rgb(242, 244, 243) 100%
   );
 }

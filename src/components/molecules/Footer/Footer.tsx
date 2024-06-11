@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 export const Footer = () => {
   return (
     <div
-      className="mt-[100px] flex w-full flex-col items-center bg-[#0c0a3d] py-[100px] md:rounded-tr-[200px] md:px-20"
+      className="bg-darkBlue mt-[100px] flex w-full flex-col items-center py-[100px] md:rounded-tr-[200px] md:px-20"
       id="contact"
     >
       <h2 className="mb-10 text-[40px] font-bold text-white">Contact</h2>
@@ -16,7 +16,7 @@ export const Footer = () => {
 
       <a
         href="mailto:francesco.coriolano@gmail.com"
-        className="mt-6 cursor-pointer text-white underline underline-offset-4 duration-300 hover:text-[#0db881]"
+        className="hover:text-aquamarine mt-6 cursor-pointer text-white underline underline-offset-4 duration-300"
       >
         francesco.coriolano@gmail.com
       </a>

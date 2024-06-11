@@ -14,9 +14,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        gradientStart: "rgba(100, 247, 217, 1)",
-        gradientMid: "rgba(100, 247, 217, 1)",
-        gradientEnd: "rgba(175, 162, 255, 1)",
+        darkBlue: "rgb(12, 10, 62, 1)",
+        aquamarine: "rgba(100, 247, 217, 1)",
       },
       boxShadow: {
         custom: "5px 5px 7px 3px rgba(0,0,0,0.31)",

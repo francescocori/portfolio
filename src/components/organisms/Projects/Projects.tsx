@@ -46,7 +46,7 @@ export const Projects = () => {
 
   return (
     <div className="flex w-full flex-col items-center" id="projects">
-      <h2 className="mb-[100px] mt-[100px] text-[40px] font-bold text-[#0c0a3d]">
+      <h2 className="text-darkBlue mb-[100px] mt-[100px] text-[40px] font-bold">
         Projects
       </h2>
       <div className="gradient-left w-screen items-center xl:w-[98%]">

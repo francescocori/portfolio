@@ -4,14 +4,12 @@ interface CardProps {
   title: string;
   description: string;
   liveUrl: string;
-  codeUrl?: string;
 }
 export const ProjectCard = ({
   image,
   title,
   description,
   liveUrl,
-  codeUrl,
 }: CardProps) => {
   return (
     <div className="object-fit mx-auto mb-10 h-[520px] w-[80%] rounded-2xl shadow-custom md:mr-[2rem] xl:mr-[8rem] xl:min-w-[440px]">
@@ -23,13 +21,14 @@ export const ProjectCard = ({
         />
       </div>
 
-      <div className="h-[45%] rounded-b-2xl bg-[#dddcf9] px-10 py-4 text-center">
-        <p className="mb-4 text-[20px] font-semibold text-[#0c0a3d]">{title}</p>
+      <div className="text-darkBlue h-[45%] rounded-b-2xl bg-[#dddcf9] px-10 py-4 text-center">
+        <p className="mb-4 text-[20px] font-semibold">{title}</p>
         <p className="mb-4 text-[14px] lg:mb-8">{description}</p>
-        <a href={liveUrl} className="mt-10 font-semibold underline">
-          Website
-        </a>
-        <p>{codeUrl}</p>
+        <div className="transform transition-transform duration-300 ease-in-out hover:-translate-y-1">
+          <a href={liveUrl} className="mt-10 font-semibold underline">
+            Website
+          </a>
+        </div>
       </div>
     </div>
   );
