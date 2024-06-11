@@ -4,14 +4,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { ExperienceCard } from "@/components/atoms";
 import { experienceData } from "./ExperienceList";
-
 export const AboutMe = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
     <div
-      className="flex w-full flex-col items-center px-10 lg:px-20 xl:px-40"
+      className="flex w-full flex-col items-center bg-[#f2f4f3] px-10 lg:px-20 xl:px-40"
       id="about"
     >
       <h2
@@ -30,7 +29,7 @@ export const AboutMe = () => {
         is essential for every developer.
       </p>
       <div className="relative mt-10 flex w-full flex-col items-center gap-4 md:items-start xl:gap-0">
-        <div className="absolute left-[50%] hidden h-[50rem] w-[5px] bg-[#0c0a3d] xl:block" />
+        <div className="absolute left-[50%] hidden h-[46rem] w-[5px] bg-[#0c0a3d] xl:block" />
         {experienceData.map((experience, index) => (
           <ExperienceCard
             time={experience.time}
