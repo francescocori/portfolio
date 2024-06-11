@@ -14,10 +14,13 @@ export const AboutMe = () => {
       className="flex w-full flex-col items-center px-10 lg:px-20 xl:px-40"
       id="about"
     >
-      <h2 className="mt-[200px] text-[40px] font-bold text-[#0c0a3d]">
+      <h2
+        className="mt-[100px] text-[40px] font-bold text-[#0c0a3d]"
+        data-aos="fade-up"
+      >
         About me
       </h2>
-      <p className="pt-10 text-[22px] text-[#0c0a3d]">
+      <p className="py-10 text-[22px] text-[#0c0a3d]" data-aos="fade-up">
         I build websites and web applications using React and other
         technologies, such as Next Js, Typescript, and HTML/CSS/SCSS. I work
         with agile development methodologies and collaborate with other

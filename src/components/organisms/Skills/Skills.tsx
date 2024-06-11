@@ -31,8 +31,10 @@ const skills = [
 export const Skills = () => {
   return (
     <div className="mt-[100px] flex w-full flex-col items-center bg-[#0c0a3d] py-[100px] md:rounded-tl-[200px] md:px-20">
-      <h2 className="mb-10 text-[40px] font-bold text-white">Skills</h2>
-      <div className="container mx-auto p-4">
+      <h2 className="mb-10 text-[40px] font-bold text-white" data-aos="fade-up">
+        Skills
+      </h2>
+      <div className="container mx-auto p-4" data-aos="fade-up">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {skills.map((skill) => (
             <SkillCard icon={skill.icon.src} key={skill.name} />
