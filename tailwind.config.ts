@@ -30,10 +30,6 @@ const config: Config = {
     xxl: "1441px",
     "3xl": "1620px",
     "4xl": "1920px",
-    "sm-tall": { raw: "(max-width: 740px) and (min-height: 751px)" },
-    small: { raw: "(min-width: 976px) and (max-height: 750px)" },
-    tall: { raw: "(min-width: 976px) and (min-height: 751px)" },
-    extra: { raw: "(min-width: 976px) and (min-height: 930px)" },
   },
   plugins: [],
 };

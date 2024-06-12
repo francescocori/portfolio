@@ -4,10 +4,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { ExperienceCard } from "@/components/atoms";
 import { experienceData } from "./ExperienceList";
+
 export const AboutMe = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <div
       className="flex w-full flex-col items-center bg-[#f2f4f3] px-10 lg:px-20 xl:px-40"

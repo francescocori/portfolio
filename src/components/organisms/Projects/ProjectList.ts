@@ -1,6 +1,6 @@
 import { Hkr, DaycareSos, FoodieMania } from "../../../../public/Images";
 interface Project {
-  id: number;
+  id: string;
   title: string;
   description: string;
   liveUrl: string;
@@ -9,7 +9,7 @@ interface Project {
 }
 export const projects: Project[] = [
   {
-    id: 1,
+    id: "HKR",
     title: "HKR",
     description:
       "The HKR website is a platform hosting live auctions for crushed cars, for buyers and sellers to engage in real-time bidding on salvaged vehicles.",
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     image: Hkr.src,
   },
   {
-    id: 2,
+    id: "DaycareSOS",
     title: "DaycareSOS",
     description:
       "Daycare SOS connects nurseries with parents, allowing easy booking of childcare spots, including last-minute and backup care. ",
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     image: DaycareSos.src,
   },
   {
-    id: 3,
+    id: "Foodie-Mania",
     title: "Foodie-Mania",
     description:
       "This is a prototype for a restaurant webpage with Community, Menu and Recipes sections, implemented on the early stage of my developer journey.",

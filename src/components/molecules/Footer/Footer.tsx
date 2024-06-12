@@ -1,7 +1,6 @@
 "use client";
 import { ScrollUpBtn } from "@/components/atoms";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (

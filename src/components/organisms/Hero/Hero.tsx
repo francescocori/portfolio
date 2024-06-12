@@ -1,12 +1,15 @@
 "use client";
 import * as React from "react";
-import "./style.css";
 import { TypeAnimation } from "react-type-animation";
 import { Parallax } from "react-scroll-parallax";
+import "./style.css";
 export const Hero = () => {
   return (
     <Parallax translateY={[-20, 20]}>
-      <div className="hero flex h-screen w-full items-center justify-center px-20 xl:px-40">
+      <div
+        className="hero flex h-screen w-full items-center justify-center px-20 xl:px-40"
+        id="hero"
+      >
         <div className="sm:w-[100%] xl:w-[57%]">
           <h1 className="xxl:text-[60px] text-[52px] font-bold text-white">
             Hello! <br /> I'm{" "}
@@ -29,11 +32,11 @@ export const Hero = () => {
         </div>
         <div className="hidden h-full w-[43%] items-center justify-center sm:block">
           <div className="triangles">
-            <div className="one"></div>
-            <div className="two"></div>
-            <div className="three"></div>
-            <div className="four"></div>
-            <div className="five"></div>
+            <div className="one" />
+            <div className="two" />
+            <div className="three" />
+            <div className="four" />
+            <div className="five" />
           </div>
         </div>
       </div>

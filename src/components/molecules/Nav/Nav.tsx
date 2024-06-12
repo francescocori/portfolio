@@ -42,12 +42,14 @@ export const Nav = () => {
             : "fixed bottom-0 left-[-100%] top-0 w-[60%] duration-500 ease-in-out"
         }
       >
-        <h1 className="m-4 w-full text-3xl font-bold text-[#00df9a]">MENU</h1>
+        <h1 className="m-4 w-full text-3xl font-bold text-[#00df9a]">
+          <a href="#hero">MENU</a>
+        </h1>
 
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="cursor-pointer rounded-xl p-4 duration-300 hover:text-[#00df9a]"
+            className="hover:text-aquamarine cursor-pointer rounded-xl p-4 duration-300"
           >
             <a href={`#${item.text.toLowerCase()} `}>{item.text}</a>
           </li>

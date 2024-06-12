@@ -15,7 +15,7 @@ export const Projects = () => {
       return "desktop";
     }
   };
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
   const [devise, setDevise] = useState(getDeviseType(window.innerWidth));
 
   useEffect(() => {

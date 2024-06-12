@@ -1,6 +1,5 @@
 import React from "react";
 import { SkillCard } from "@/components/atoms";
-
 import {
   Figma,
   Github,
@@ -14,17 +13,21 @@ import {
   VisualStudio,
   ReactIcon,
 } from "../../../../public/Icons";
-const skills = [
-  { name: "JavaScript", icon: Js },
-  { name: "React", icon: ReactIcon },
-  { name: "TypeScript", icon: Typescript },
-  { name: "Tailwind CSS", icon: Tailwind },
-  { name: "Github", icon: Github },
-  { name: "Figma", icon: Figma },
-  { name: "Sass", icon: Sass },
-  { name: "Html", icon: Html },
-  { name: "CSS", icon: Css },
-  { name: "Visual Studio", icon: VisualStudio },
+interface Skill {
+  name: string;
+  icon: string;
+}
+const skills: Skill[] = [
+  { name: "JavaScript", icon: Js.src },
+  { name: "React", icon: ReactIcon.src },
+  { name: "TypeScript", icon: Typescript.src },
+  { name: "Tailwind CSS", icon: Tailwind.src },
+  { name: "Github", icon: Github.src },
+  { name: "Figma", icon: Figma.src },
+  { name: "Sass", icon: Sass.src },
+  { name: "Html", icon: Html.src },
+  { name: "CSS", icon: Css.src },
+  { name: "Visual Studio", icon: VisualStudio.src },
 ];
 
 export const Skills = () => {
@@ -36,7 +39,7 @@ export const Skills = () => {
       <div className="container mx-auto p-4" data-aos="fade-up">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {skills.map((skill) => (
-            <SkillCard icon={skill.icon.src} key={skill.name} />
+            <SkillCard icon={skill.icon} key={skill.name} />
           ))}
         </div>
       </div>
