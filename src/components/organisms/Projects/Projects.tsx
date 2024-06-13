@@ -16,16 +16,21 @@ export const Projects = () => {
     }
   };
   const [width, setWidth] = useState(0);
-  const [devise, setDevise] = useState(getDeviseType(window.innerWidth));
+  const [devise, setDevise] = useState("default");
 
   useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-      setDevise(getDeviseType(window.innerWidth));
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        setDevise(getDeviseType(window.innerWidth));
+      };
+
+      handleResize();
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
