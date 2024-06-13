@@ -10,7 +10,7 @@ export const Footer = () => {
     >
       <h2 className="mb-10 text-[40px] font-bold text-white">Contact</h2>
       <p className="text-white">
-        Don't hesitate to reach out for any question!
+        Don&apos;t hesitate to reach out for any question!
       </p>
 
       <a
