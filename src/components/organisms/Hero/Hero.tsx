@@ -12,7 +12,7 @@ export const Hero = () => {
       >
         <div className="sm:w-[100%] xl:w-[57%]">
           <h1 className="xxl:text-[60px] text-[52px] font-bold text-white">
-            Hello! <br /> I'm{" "}
+            Hello! <br /> I&apos;m{" "}
             <div className="relative inline-block bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text pt-0 text-transparent underline">
               <span>Francesco</span>
               <span> Coriolano.</span>

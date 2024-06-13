@@ -16,7 +16,7 @@ export const Projects = () => {
     }
   };
   const [width, setWidth] = useState(0);
-  const [devise, setDevise] = useState(getDeviseType(0));
+  const [devise, setDevise] = useState(getDeviseType(window.innerWidth));
 
   useEffect(() => {
     const handleResize = () => {
