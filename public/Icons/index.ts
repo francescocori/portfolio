@@ -1,8 +1,8 @@
 export { default as Github } from "./github.png";
 export { default as Css } from "./css.png";
-export { default as Js } from "./Js.png";
+export { default as Js } from "./js.png";
 export { default as Nodejs } from "./nodejs.png";
-export { default as Sass } from "./Sass.png";
+export { default as Sass } from "./sass.png";
 export { default as Tailwind } from "./tailwind.png";
 export { default as Typescript } from "./typescript.png";
 export { default as VisualStudio } from "./visualStudio.png";
