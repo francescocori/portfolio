@@ -6,26 +6,18 @@ import { projects } from "./ProjectList";
 import "react-multi-carousel/lib/styles.css";
 
 export const Projects = () => {
-  const getDeviseType = (width: number) => {
-    if (width < 768) {
-      return "mobile";
-    } else if (width >= 768 && width < 1024) {
-      return "tablet";
-    } else {
-      return "desktop";
-    }
-  };
-  const [width, setWidth] = useState(0);
-  const [devise, setDevise] = useState("default");
+  const getDeviceType = (width: number) =>
+    width < 768 ? "mobile" : width < 1024 ? "tablet" : "desktop";
+
+  const [device, setDevice] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleResize = () => {
-        setDevise(getDeviseType(window.innerWidth));
+        setDevice(getDeviceType(window.innerWidth));
       };
 
       handleResize();
-
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }
@@ -43,7 +35,7 @@ export const Projects = () => {
       partialVisibilityGutter: 30,
     },
     mobile: {
-      breakpoint: { max: 864, min: 0 },
+      breakpoint: { max: 768, min: 0 },
       items: 1,
       partialVisibilityGutter: 30,
     },
@@ -59,29 +51,24 @@ export const Projects = () => {
       </h2>
       <div className="gradient-left w-screen items-center xl:w-[98%]">
         <Carousel
-          centerMode={devise === "tablet" ? true : false}
           swipeable={false}
           draggable={false}
           showDots={true}
           responsive={responsive}
           ssr={true}
           infinite={true}
-          autoPlay={devise === "mobile" ? true : false}
-          autoPlaySpeed={3500}
           keyBoardControl={true}
-          customTransition="all .5"
           transitionDuration={500}
           containerClass="carousel-container"
-          removeArrowOnDeviceType={["mobile"]}
-          deviceType={devise}
+          deviceType={device}
         >
-          {projects.map((project) => (
+          {projects.map(({ image, title, description, liveUrl }) => (
             <ProjectCard
-              image={project.image}
-              title={project.title}
-              description={project.description}
-              liveUrl={project.liveUrl}
-              key={project.title}
+              image={image}
+              title={title}
+              description={description}
+              liveUrl={liveUrl}
+              key={title}
             />
           ))}
         </Carousel>

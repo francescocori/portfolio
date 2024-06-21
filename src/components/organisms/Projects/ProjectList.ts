@@ -1,4 +1,9 @@
-import { Hkr, DaycareSos, FoodieMania } from "../../../../public/Images";
+import {
+  Hkr,
+  DaycareSos,
+  FoodieMania,
+  Portfolio,
+} from "../../../../public/Images";
 interface Project {
   id: string;
   title: string;
@@ -32,5 +37,14 @@ export const projects: Project[] = [
     liveUrl: "https://foodiemania.netlify.app/",
     image: FoodieMania.src,
     codeUrl: "https://github.com/francescocori/restaurant-website",
+  },
+  {
+    id: "Personal-Website",
+    title: "Personal Website",
+    description:
+      "My personal portfolio to showcase my skills, experience and projects that I'm working on",
+    liveUrl: "https://francescodev.com/",
+    image: Portfolio.src,
+    codeUrl: "https://github.com/francescocori/portfolio",
   },
 ];
