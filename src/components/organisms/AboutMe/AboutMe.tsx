@@ -12,16 +12,19 @@ export const AboutMe = () => {
 
   return (
     <div
-      className="flex w-full flex-col items-center bg-[#f2f4f3] px-10 lg:px-20 xl:px-40"
+      className="mx-auto flex w-full max-w-[1800px] flex-col items-center bg-[#f2f4f3] px-10 lg:px-20 xl:px-40"
       id="about"
     >
       <h2
-        className="text-darkBlue mt-[100px] text-[40px] font-bold"
+        className="mt-[100px] text-[40px] font-bold text-darkBlue"
         data-aos="fade-up"
       >
         About me
       </h2>
-      <p className="text-darkBlue py-10 text-[22px]" data-aos="fade-up">
+      <p
+        className="py-10 text-center text-[22px] text-darkBlue"
+        data-aos="fade-up"
+      >
         I build websites and web applications using React and other
         technologies, such as Next Js, Typescript, and HTML/CSS/SCSS. I work
         with agile development methodologies and collaborate with other
@@ -31,7 +34,7 @@ export const AboutMe = () => {
         is essential for every developer.
       </p>
       <div className="relative mt-10 flex w-full flex-col items-center gap-4 md:items-start xl:gap-0">
-        <div className="bg-darkBlue absolute left-[50%] hidden h-[46rem] w-[5px] xl:block" />
+        <div className="absolute left-[50%] hidden h-[46rem] w-[5px] bg-darkBlue xl:block" />
         {experienceData.map((experience, index) => (
           <ExperienceCard
             time={experience.time}

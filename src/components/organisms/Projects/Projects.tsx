@@ -39,19 +39,22 @@ export const Projects = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1,
+      items: 2,
       partialVisibilityGutter: 30,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 864, min: 0 },
       items: 1,
       partialVisibilityGutter: 30,
     },
   };
 
   return (
-    <div className="flex w-full flex-col items-center" id="projects">
-      <h2 className="text-darkBlue mb-[100px] mt-[100px] text-[40px] font-bold">
+    <div
+      className="mx-auto flex w-full max-w-[1600px] flex-col items-center"
+      id="projects"
+    >
+      <h2 className="mb-[100px] mt-[100px] text-[40px] font-bold text-darkBlue">
         Projects
       </h2>
       <div className="gradient-left w-screen items-center xl:w-[98%]">
@@ -64,7 +67,7 @@ export const Projects = () => {
           ssr={true}
           infinite={true}
           autoPlay={devise === "mobile" ? true : false}
-          autoPlaySpeed={2000}
+          autoPlaySpeed={3500}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
