@@ -6,15 +6,15 @@ interface ExpepienceCard {
 }
 export const experienceData: ExpepienceCard[] = [
   {
-    time: "July 2022 - today",
+    time: "May 2022 - today",
     role: "Frontend Developer - Studio Graphene",
     skills:
-      "React - Typescript - Tailwind - JS - HTML - CSS - Figma - Next.Js -  Git  ",
+      "React - Typescript - Tailwind - JS - HTML - CSS - Figma - Next.Js -  Git - REST API ",
   },
   {
-    time: "2022",
+    time: "Sep 2021 - Feb2022",
     role: "Frontend Developer Internship - KinderBDay",
-    skills: "React -JS - HTML - CSS - Bootstrap - SEO  ",
+    skills: "React -JS - HTML - CSS - Bootstrap - SEO - REST API ",
     even: true,
   },
   {
