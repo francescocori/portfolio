@@ -55,7 +55,7 @@ export const Nav = () => {
               className="cursor-pointer rounded-xl p-4 text-[#00df9a] duration-300"
               onClick={handleNav}
             >
-              <a href={`#${item.text.toLowerCase()} `} className="text-[2rem]">
+              <a href={`#${item.text.toLowerCase()}`} className="text-[2rem]">
                 {item.text}
               </a>
             </li>
